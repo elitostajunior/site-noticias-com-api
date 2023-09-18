@@ -24,7 +24,7 @@ git clone https://github.com/elitostajunior/site-noticias-com-api.git
 npm install
 ```
 
-3 - Para ver a demonstração do projeto, é só executar seguinte comando:
+3 - Para ver a demonstração do projeto, é só executar seguinte comando e clicar no link gerado para visualização no terminal do prompt de comando (exemplo: `Local: http://localhost:{numeroDaPorta}/`):
 ```
 npm run dev
 ```
