@@ -52,9 +52,6 @@ document.addEventListener("DOMContentLoaded", function () {
         // Limpa o conteúdo atual das notícias
         newsContainer.innerHTML = '';
 
-        // Chave da API da News API
-        const apiKey = 'd6d046b6d96c4f7580870c1144776ba0';
-
         // URL da API da News API
         const apiUrl = `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&pageSize=${pageSize}&apiKey=${apiKey}`;
 
@@ -104,7 +101,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Função para buscar notícias com base na consulta de pesquisa
     async function searchNews(query){
         try {
-            const apiKey = 'd6d046b6d96c4f7580870c1144776ba0';
             const apiUrl = `https://newsapi.org/v2/top-headlines?q=${query}&pageSize=${pageSize}&apiKey=${apiKey}`;
             
             const response = await fetch(apiUrl);
